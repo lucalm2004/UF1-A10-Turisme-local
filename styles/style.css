@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ *{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    box-sizing: 0;
+ }
+
+ a{
+   text-decoration: none;
+ }
+ .principal{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fondo.png) no-repeat center;
+    background-size: cover;
+ }
+
+ .listado{
+    list-style: none;
+    display: inline-flex;
+    margin: 20px 70px 0 0;
+    line-height: 52px;
+ }
+
+ .links{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+ }
+
+ .nav{
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    background: rgba(0, 0, 0, 0.03);
+    justify-content: space-between;
+ }
+
+ .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 20px 0 0 100px;
+ }
+
+ .parte1{
+    color: #2986ff;
+    font-weight: 600;
+ }
+
+ .parte2{
+    font-size: 50px;
+    font-weight: 900;
+ }
+
+ .lateral{
+    position: absolute;
+    width: 150px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.06);
+    left: 90px;
+    top:0;
+ }
+
+.social{
+    position: relative;
+    top: 50vh;
+}
+
+.icon-facebook{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.links:hover{
+    color: #2986ff;
+}
+
+.seleccionado{
+    color: #2986ff;
+    font-weight: 600;
+}
+
+.icon-instagram{
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+ .listado-social{
+    list-style: none;
+ }
+
+ .icon-facebook:hover{
+    color: #2986ff;
+ }
+
+ .icon-instagram:hover{
+    color: #d62976;
+ }
+
+ .noticias{
+    position: absolute;
+    width: 600px;
+    height: 280px;
+    left: 310px;
+    top: 40%;
+    overflow: hidden;
+ }
+
+ .slider{
+    display: inline-flex;
+    transition: all 0.4s ;
+ }
+
+ .articulo{
+    width: 600px;
+    height: 280px;
+ }
+
+ .titulo{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+ }
+
+.texto{
+    color: white;
+}
+
+.txtnot{
+   margin-right: 20px;
+}
+
+.conoce-mas{
+    display: inline-block;
+    padding: 15px 25px;
+    background: black;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.controlador{
+    position: absolute;
+    height: 280px;
+    width: 1px;
+    background: white;
+    left: 265px;
+    top: 37%;
+}
+
+#linea1,#linea2,#linea3,#linea4{
+    height: 80px;
+    width: 10px;
+    transform: translateX(-0%);
+}
+
+#activa{
+    position: absolute;
+    height: 80px;
+    width: 8px;
+    top: 0;
+    background: white;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.noticias2{
+   height: 20vh;
+   width: 30%;
+   margin-top: -800px;   
+   margin-left: 65%;
+   color: white;
+}
+
+.maps{
+   width:600px; 
+   height:300px; 
+   margin-left:18%; 
+   margin-top: 17%;
+}
+
+.titnot{
+   margin-bottom: 2%;
+   margin-top: 10px;
+}
+
+.mapa{
+   margin-left: 50%;
+}
+
+scroll-container {
+   display: block;
+   width: 670px;
+   height: 400px;
+   overflow-y: scroll;
+   scroll-behavior: smooth;
+ }
+ scroll-page {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   font-size: 5em;
+ }
+
+ /* Media query */
+ @media only screen and (max-width: 800px) {
+.listado{
+position: absolute;
+font-size: 10px;
+margin-left: 170px;
+margin-top: -10px;
+ }
+ a{
+   color: white;
+ }
+ .lateral{
+   left: 0;
+ }
+
+ .logo{
+ margin: 10px 0 0 10px;
+ }
+ .nav{
+   height: 3vh;
+ }
+
+ .controlador{
+   left: 170px;
+   top: 5%;
+ }
+
+ .noticias{
+   left: 200px;
+   top: 100px;
+ }
+
+ .titulo{
+   font-size: 25px;
+   margin-bottom: 10px;
+ }
+
+ .texto{
+   font-size: 15px;
+ }
+
+ .articulo{
+   width: 335px;
+   margin-right: 400px;
+   height: 300px;
+ }
+.noticias2 {
+margin-left: 25%;
+padding-top: 15%;
+}
+
+.txtnot{
+   font-size: 15px;
+   width: 50%;
+}
+
+.titnot{
+font-size: 20px;
+width: 50%;
+}
+.maps{
+   margin-top: 30%;
+   width: 20px;
+   margin-left: 25%;
+}
+.slide{
+   position: absolute;
+   box-shadow: -13px 1px 6px rgb(0 0 0 / 64%);
+   margin-top: -860px;
+   width: 16%;
+   height: 20px;
+   left: 35%;
+}
+
+.principal{
+  width: 830px; 
+}
+}
+
+/* Carrusel */
+.slide {
+   position: relative;
+   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+margin-top: -300px;   width: 16%;
+height: 20px;
+   left: 35%;
+
+}
+.slide-inner {
+   position: relative;
+   overflow: hidden;
+}
+.slide-open:checked + .slide-item {
+   position: static;
+   opacity: 100;
+}
+.slide-item {
+   position: absolute;
+   opacity: 0;
+   -webkit-transition: opacity 0.6s ease-out;
+   transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+   display: block;
+   height: auto;
+   max-width: 100%;
+}
+.slide-control {
+   background: rgba(0, 0, 0, 0.28);
+   border-radius: 50%;
+   color: #fff;
+   cursor: pointer;
+   display: none;
+   font-size: 40px;
+   height: 40px;
+   line-height: 35px;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translate(0, -50%);
+   cursor: pointer;
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   text-align: center;
+   width: 40px;
+   z-index: 10;
+}
+.slide-control.prev {
+   left: 2%;
+}
+.slide-control.next {
+   right: 2%;
+}
+.slide-control:hover {
+   background: rgba(0, 0, 0, 0.8);
+   color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+   display: block;
+}
+.slide-indicador {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   left: 0;
+   right: 0;
+   text-align: center;
+   z-index: 10;
+}
+.slide-indicador li {
+   display: inline-block;
+   margin: 0 5px;
+}
+.slide-circulo {
+   color: #828282;
+   cursor: pointer;
+   display: block;
+   font-size: 35px;
+}
+.slide-circulo:hover {
+   color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+    li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+     li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+     li:nth-child(3) .slide-circulo {
+   color: #428bca;
+}
+#titulo {
+   width: 100%;
+   position: absolute;
+   padding: 0px;
+   margin: 0px auto;
+   text-align: center;
+   font-size: 27px;
+   color: rgba(255, 255, 255, 1);
+   font-family: 'Open Sans', sans-serif;
+   z-index: 9999;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+        -1px 0px 2px rgba(255, 255, 255, 0);
+}
